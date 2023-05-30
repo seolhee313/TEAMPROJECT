@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 보기</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header" class="">
+        <div class="header__inner container">
+            <div class="left">
+                <h1><a href="/php2/index.html"><img src="../html/assets/img/logo.png" alt="로고"></a></h1>
+            </div>
+            <nav class="nav__inner">
+                <ul>
+                    <li><a href="background.html">하루 한 지문</a></li>
+                    <li><a href="question.html">문제</a></li>
+                    <li><a href="mzTest.html">게임</a></li>
+                    <li><a href="board.html">커뮤니티</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    
+    <div class="tab__menu">
+        <div class="tab__inner">
+            <h1>게시글 보기</h1>
+            <p>하루 한 지문에서 자유롭게 소통해주세요!<br>
+               비방, 모욕, 욕설 등의 게시글은 무단 삭제될 수 있습니다.</p>
+        </div>
+    </div>
+    <!-- tab -->
+    <div class="modal">
+        <div class="modal__inner">
+            <h1 class="mt50">댓글 수정하기</h1>
+            <p class="mt30">댓글을 수정할 수 있습니다.</p>
+            <div class="modal__wrap mt90">
+                <textarea name="boardContents" id="boardContents" rows="10" class="inputStyle4" maxlength="256" placeholder="여기서 댓글을 수정할 수 있습니다.!" required></textarea>
+            </div>
+            <button class="modal__close modalBtn">닫기</button>
+            <button type="submit" class="modalBtn">수정하기</button>
+        </div>
+    </div>
+    <!-- modal -->
+    <main>
+        <div class="boardView__inner container">
+            <div class="view__head">
+                <a href="board.html"><img src="../html/assets/img/list.png" alt="리스트"></a>
+                <h2><a href="board.html">커뮤니티</a></h2><em>></em>
+                <h2><a href="board.html"><span>자유게시판</span></a></h2>
+            </div>
+            <div class="view__body">
+                <div class="boardView__info mt20">
+                    <div class="boardView__left">
+                        <div class="boardView__num">1</div>
+                        <div class="boardView__title">어쩌면 국어를 포기하고 코딩을 배우는게 나을지도...</div>
+                    </div>
+                    <div class="boardView__right">
+                        <div class="boardView__count">100</div>
+                        <div class="boardView__img"><img src="../html/assets/img/writericon.png" alt="아이콘"></div>
+                        <div class="boardView__writer">
+                            <div class="name">장진용</div>
+                            <div class="regtime">2023-05-08</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boardView__main">
+                    <p>
+                        비문학은 왜이리 어려운 걸까요 ㅠㅠ?<br><br>
+                        챗GPT에 비문학이 어려운 이유를 물어보니 이렇게 답해주네요.<br><br>
+                        비문학은 언어와 문학적 요소보다는 사실과 정보를 전달하는 것에 초점을 둔 글쓰기 형식입니다.<br>
+                        그러나 여전히 많은 사람들에게 비문학은 어려운 것으로 여겨지는데, 이에는 몇 가지 이유가 있습니다.<br><br>
+                        첫째로, 비문학은 객관적이고 명확한 언어를 사용해야 합니다. 문학 작품에서는 말장난과 은유 등의 문학적 기법이 사용되기 때문에 이해하기 쉽지 않을 수 있지만, 비문학에서는 직설적인 문장 구조와 표준어 사용이 필수적입니다.<br><br>
+                        둘째로, 비문학은 종종 전문 지식이나 기술 용어가 사용됩니다. 이러한 용어는 비전공자나 초보자들에게는 이해하기 어려울 수 있습니다.<br><br>
+                        셋째로, 비문학은 논리적인 구조와 사실적인 정보를 기반으로 합니다. 이는 많은 사람들이 혼란스러워하고, 이해하기 어렵게 느끼게 만들 수 있습니다.<br><br>
+                    </p>
+                    <div class="boardView__like mt50"><img src="../html/assets/img/like.svg" alt="like"></div>
+                </div>
+                <div class="boardView__btn mt60">
+                    <a href="board.html" class="btnStyle6">목록보기</a>
+                    <a href="boardModify.html" class="btnStyle6">수정하기</a>
+                    <a href="#" class="btnStyle6">삭제하기</a>
+                </div>
+            </div>
+            <div class="view__foot">
+                <div class="comment__write">
+                    <p>댓글 2개</p>
+                    <div class="comment__box">
+                        <textarea type="text" name="commentWrite" class="commentWrite" maxlength="1000" placeholder="댓글을 입력해주세요!"></textarea>
+                        <button type="submit" name="commentBtn" class="commentBtn">등록</button>
+                    </div>
+                </div>
+                <div class="comment__view">
+                    <div>
+                        <div class="comment__img"><img src="../html/assets/img/person.svg" alt="#"></div>
+                        <div class="comment__writer">
+                            <div class="name">여다슬</div>
+                            <div class="contents">와.. 진짜 코피 터지게 공부해야겠네요;;</div>
+                        </div>
+                        <div class="comment__delete">
+                            <a class="modal-btn">수정 / </a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comment__img"><img src="../html/assets/img/person.svg" alt="#"></div>
+                        <div class="comment__writer">
+                            <div class="name">천설희</div>
+                            <div class="contents">진용님 공부 좀 더하세요 ~~~~!!!!!!!</div>
+                        </div>
+                        <div class="comment__delete">
+                            <a class="modal-btn">수정 / </a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comment__img"><img src="../html/assets/img/person.svg" alt="#"></div>
+                        <div class="comment__writer">
+                            <div class="name">장진용</div>
+                            <div class="contents">네 죄송.. ㅜㅜ</div>
+                        </div>
+                        <div class="comment__delete">
+                            <a class="modal-btn">수정 / </a>
+                            <a href="#">삭제</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+    
+    <footer id="footer" class="darkgreen">
+        <div class="footer__inner container">
+            <div class="ul__inner">
+                <div class="left">
+                    <ul>
+                        <li><a href="#c">개인정보처리방침</a></li>
+                        <li><a href="#c">이용약관</a></li>
+                        <li><a href="#c">이메일무단수집거부</a></li>
+                    </ul>
+                    <h1 class="mt100"><img src="../html/assets/img/logo.png" alt="로고"></h1>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="main.html">홈 바로가기</a></li>
+                        <li><a href="background.html">하루 한 지문 소개</a></li>
+                        <li><a href="question.html">문제 풀기</a></li>
+                        <li><a href="mzTest.html">게임</a></li>
+                        <li><a href="board.html">커뮤니티</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                    </ul>
+                    <address class="mt40 mb70">경기도 안산시 단원구 중앙동 코스모프라자 6층 | Tel(010-4355-7340)</address>
+                    <a href="faq.html">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $('.comment__delete .modal-btn').click(function(){
+            $('.modal').fadeIn()
+        })
+        $('.modal__close').click(function(){
+            $('.modal').fadeOut();
+        })
+    </script>
+</body>
+</html>

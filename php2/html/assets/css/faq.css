@@ -1,0 +1,78 @@
+.faq-list__item {
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+.faq-list__question .faq__icon {
+    display: block;
+    position: relative;
+    padding: 0 0.5em 0 2.7em;
+    font-size: 30px;
+}
+.faq-list__question {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 30px 0;
+    transition: all 0.4s;
+}
+.faq-list__question:hover {
+    background-color: var(--bg__mint);
+}
+.faq-list__question .faq__title {
+    display: block;
+    padding: 0 32px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #777;
+    word-break: keep-all;
+}
+.faq-list__answer {
+    margin: 20px 0;
+    padding: 33px 30px 34px 0px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+.faq-list__answer .answer__wrap {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+.faq-list__answer .answer__icon {
+    flex: 1 7.7%;
+    display: block;
+    position: relative;
+    margin-top: 7px;
+}
+.faq-list__answer .answer__box {
+    flex: 1 91.3%;
+    box-sizing: border-box;
+}
+.faq-list__question .faq__text {
+    justify-content: flex-start;
+    padding: 0 0 0 2em;
+    width: 75%;
+    font-size: 20px;
+    text-align: left;
+    color: #555;
+}
+.faq-list__question.active .faq__text:before {
+    transform: translateY(-50%) rotate(0deg);
+}
+.faq-list__question .faq__text:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 33px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 24px;
+    height: 20px;
+    background: url("data:image/svg+xml,%3Csvg width='24' height='14' viewBox='0 0 24 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.9393 0.93934C11.5251 0.353553 12.4749 0.353553 13.0607 0.93934L22.6066 10.4853C23.1924 11.0711 23.1924 12.0208 22.6066 12.6066C22.0208 13.1924 21.0711 13.1924 20.4853 12.6066L12 4.12132L3.51472 12.6066C2.92893 13.1924 1.97918 13.1924 1.3934 12.6066C0.807612 12.0208 0.807612 11.0711 1.3934 10.4853L10.9393 0.93934ZM13.5 2V3H10.5V2L13.5 2Z' fill='%23888888'/%3E%3C/svg%3E%0A") no-repeat;
+}
+.faq__icon em {
+    color: var(--bg__darkgreen);
+}
+.board__inner .btn {
+    display: flex;
+    justify-content: end;
+}
