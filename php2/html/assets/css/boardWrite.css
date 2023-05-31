@@ -1,0 +1,75 @@
+.tab__menu {
+    width: 100%;
+    padding: 100px 100px 50px 100px;
+    background-color: #C0EBE8;
+}
+.tab__inner {
+    text-align: center;
+    padding-top: 100px;
+}
+.tab__inner h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.tab__inner p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.board__write {
+    padding: 50px 100px 100px;
+}
+.board__write label {
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+.board__write input {
+    margin-bottom: 30px;
+    outline: none;
+    text-align: center;
+}
+.board__title {
+    position: relative;
+}
+#searchOptions {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50px;
+    height: 40px;
+    left: 2%;
+    top: 10%;
+    text-align: center;
+    border: none;
+    background: #fff;
+    color: #000;
+    padding: 0 5px;
+}
+#boardCategory {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50px;
+    height: 40px;
+    left: 2%;
+    top: 10%;
+    text-align: center;
+    border: none;
+    background: #fff;
+    color: #000;
+    padding: 0 5px;
+}
+.board__write textarea {
+    padding: 2em;
+    resize: none;
+    outline: none;
+}
+.boardWrite__btn {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+#boardTitle {
+    text-align: center;
+}

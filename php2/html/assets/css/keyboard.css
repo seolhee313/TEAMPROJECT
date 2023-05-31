@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'PilseungGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/PilseungGothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OKChan';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.ttf') format("truetype");
+    font-display: swap;
+}
+
+.keyboard {
+    box-sizing: border-box;
+    background: #17A2B8;
+    /* 하늘 */
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjc4NjMzN2VkMGQ3YjJmMDdmODBjN2ViNDRmZjFjYmM3MWU4ZjBjZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/10539PNHnSuPTi/giphy.gif);
+    /* 고양이 */
+    /* background-image: url(https://i.pinimg.com/originals/f0/1f/df/f01fdf01355b763ef82e5ea64646922c.gif); */
+    /* 꽃 */
+    /* background-image: url(https://i.pinimg.com/originals/6a/62/20/6a6220cf08d104335ab53dd59c7dce62.gif); */
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.keyboard {
+    width: 100%;
+    background-color: #C0EBE8;
+}
+.keyboard__inner {
+    text-align: center;
+    padding-top: 100px;
+}
+.keyboard__inner h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.typing__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 5em;
+}
+.typing__inner {
+    /* width: 60vw; */
+    min-width: 900px;
+    height: 60vh;
+    background: #fff;
+    border-radius: 20px;
+    padding: 0 40px 40px;
+    margin: 0 auto;
+}
+.typing__container {
+    margin-top: 50px;
+}
+.typing__container > div > h2 {
+    font-size: 38px;
+    text-align: center;
+    font-family: 'PilseungGothic';
+    color: orange;
+}
+.typing__menu {
+    display: flex;
+    justify-content: right;
+}
+.typing__menu .backBtn a img {
+    width: 40px;
+    height: 40px;
+}
+.typing__menu .typingTip a img {
+    width: 40px;
+    height: 40px;
+}
+.input__field {
+    width: 890px;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin-bottom: 3em;
+    border-radius: 20px;
+}
+.typing__text {
+    border: 1px solid #C3C3C3;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: justify;
+    word-break: break-all;
+    height: 300px;
+    margin-top: 33px;
+}
+.typing__text p {
+    height: auto;
+    line-height: 1.5;
+}
+.typing__text p span {
+    position: relative;
+}
+.typing__text p span.correct {
+    color: #637da5;
+}
+.typing__text p span.incorrect {
+    color: #cb3439;
+    background: #ffc0cb;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+}
+.typing__text p span.active {
+    color: #17a2b8;
+}
+.typing__text p span.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #17a2b8;
+    animation: blink 1s ease-in-out infinite;
+    opacity: 0;
+}
+@keyframes blink {
+    50% {opacity: 1;}
+}
+.typing__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.typing__info button {
+    width: 180px;
+    background: #17A2B8;
+    color:#fff;
+    font-family: "Poppins";
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.typing__info > div {
+    display: flex;
+}
+.typing__info > div:last-child a {
+    margin-left: 10px;
+}
+.typing__info ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.typing__info ul li {
+    width: 20%;
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    border-left: 1px solid #C3C3C3;
+    padding-left: 40px;
+}
+.typing__info ul li:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+.typing__info li p {
+    white-space: nowrap;
+}
+.typing__info ul li span {
+    padding: 0 10px;
+}
+.typing__info a {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* 댓글 수정하기 모달 */
+.kmodal {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.kmodal__inner h1 {
+    color: var(--bg__darkgreen);
+    font-size: 30px;
+    font-weight: bold;
+}
+.kmodal__inner p {
+    font-size: 20px;
+    color: #666666;
+}
+.kmodal .kmodal__inner {
+    width: 550px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: relative;
+    border-radius: 30px;
+    border: 8px solid #AEDBD6;
+}
+.kmodal .kmodal__inner .kmodal__close {
+    position: absolute;
+    /* bottom: 90px; */
+    /* right: 150px; */
+    width: 40px;
+    /* height: 21px; */
+}
+.kmodal__wrap {
+    padding: 50px;
+    left: 50%; top: 100px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 100px;
+}
+.kmodal__text {
+    width: 100%;
+    height: 100%;
+}
+.kmodalBtn {
+    display: block;
+    background-color: var(--color__white);
+    color: var(--color__white);
+    padding: 0.1em 0.7em;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+.kmodal-btn {
+    cursor: pointer;
+}

@@ -1,0 +1,244 @@
+/* 
+    +header
+    +nav
+    +footer
+*/
+
+/* header__inner */
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 9000;
+}
+.header__inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav__inner {
+    width: 80%;
+    text-align: center;
+}
+.nav__inner > ul {
+    display: inline-block;
+    width: 100%;
+}
+.nav__inner > ul > li {
+    position: relative;
+}
+.nav__inner > ul > li:hover {
+    transition: all 0.3s;
+}
+.nav__inner > ul > li > a {
+    width: 100%;
+    height: 100px;
+    transition: all 0.3s;
+    padding: 30px 0 30px;
+}
+.nav__inner > ul > li:hover > a {
+    font-weight: bold;
+    color: var(--bg__darkgreen);
+}
+.nav__inner > ul > li > ul.sub {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 62px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.nav__inner > ul > li > ul.sub > li {
+    width: 100%;
+    display: inline-block;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+.nav__inner > ul > li > ul.sub > li:hover {
+    background-color: var(--bg__mint);
+    transition: all 0.3s;
+}
+.nav__inner > ul > li > ul.sub > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.nav__inner > ul > li > ul.sub > li > a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--bg__darkgreen);
+}
+.my > a img {
+    position: absolute;
+    right: 130px;
+    top: 3px;
+    width: 35px;
+    height: 35px;
+}
+.nav__bg {
+    position: fixed;
+    left: 0;
+    top: 96px;
+    width: 100%;
+    padding: 0 0 12em 0;
+    background-color: #ffffff;
+    display: none;
+}
+.nav__inner > ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.nav__inner > ul > li {
+    padding: 0 40px;
+    font-size: 20px;
+}
+.header__inner .left {
+    width: 10%;
+}
+.header__inner .left h1 {
+    width: 150px;
+}
+.header__inner .right {
+    width: 10%;
+    position: relative;
+}
+.header__inner .right ul a {
+    cursor: pointer;
+    padding: 8px 50px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: #aedbd6;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.header__inner .right ul a:hover {
+    background-color: #72c4ba;
+}
+/* footer */
+#footer {
+    padding: 70px 100px 50px 100px;
+    color: #fff;
+}
+.ul__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.ul__inner .right {
+    text-align: right;
+}
+.left h1 {
+    width: 150px;
+}
+.right address {
+    margin-top: 20px;
+    font-weight: 300;
+}
+.ul__inner ul {
+    display: flex;
+}
+.ul__inner ul li {
+    font-size: 18px;
+}
+.ul__inner ul li a {
+    color: var(--color__white);
+    padding: 0 10px;
+    font-weight: 300;
+}
+.ul__inner .right > a {
+    font-size: 20px;
+    color: var(--bg__darkgreen);
+    background-color: var(--color__white);
+    padding: 10px 60px;
+    border-radius: 30px;
+}
+.header__search {
+    text-align: center;
+    position: relative;
+}
+.header__search__input {
+    width: 30%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+}
+.header__searchBtn {
+    position: absolute;
+    right: 32%;
+    top: 25%;
+    background: url(../img/icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+/* footer */
+#footer {
+    padding: 70px 100px 50px 100px;
+    color: #fff;
+}
+.ul__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.ul__inner .right {
+    text-align: right;
+}
+.left h1 {
+    width: 150px;
+}
+.right address {
+    margin-top: 20px;
+    font-weight: 300;
+}
+.ul__inner ul {
+    display: flex;
+}
+.ul__inner ul li {
+    font-size: 18px;
+}
+.ul__inner ul li a {
+    color: var(--color__white);
+    padding: 0 10px;
+    font-weight: 300;
+}
+.ul__inner .right > a {
+    font-size: 20px;
+    color: var(--bg__darkgreen);
+    background-color: var(--color__white);
+    padding: 10px 60px;
+    border-radius: 30px;
+}
+.header__search {
+    text-align: center;
+    position: relative;
+}
+.header__search__input {
+    width: 30%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+}
+.header__searchBtn {
+    position: absolute;
+    right: 32%;
+    top: 25%;
+    background: url(../img/icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

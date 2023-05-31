@@ -1,0 +1,51 @@
+/* idDeleteOk__inner */
+.idDeleteOk__inner {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15em 0em 10em;
+    text-align: center;
+}
+
+/* idDeleteOk__box */
+.idDeleteOk__box {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 60px 10px;
+}
+.idDeleteOk__box .top h1 {
+    width: 180px;
+    display: inline-block;
+}
+.idDeleteOk__box .top h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+.idDeleteOk__box .top p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.idDeleteOk__box .nav {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.idDeleteOk__box .nav h3 {
+    width: 180px;
+}
+
+/* idDeleteOk__form */
+.idDeleteOk__form .top a {
+    font-size: 16px;
+    color: var(--color__white);
+    background-color: var(--bg__green);
+    padding: 12px 100px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.idDeleteOk__form .top a:hover {
+    background-color: var(--bg__darkgreen);
+}

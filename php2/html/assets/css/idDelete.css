@@ -1,0 +1,105 @@
+/* idDelete__inner */
+.idDelete__inner {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15em 0em 10em;
+    text-align: center;
+}
+
+/* idDelete__box */
+.idDelete__box {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 60px 10px;
+}
+.idDelete__box .top h1 {
+    width: 180px;
+    display: inline-block;
+}
+.idDelete__box .top h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+.idDelete__box .top p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.idDelete__box .nav {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.idDelete__box .nav h3 {
+    width: 180px;
+}
+
+/* idDelete__form */
+.idDelete__form .top a {
+    font-size: 16px;
+    color: var(--bg__darkgreen);
+    background-color: var(--color__white);
+    padding: 12px 100px;
+    border: 1px solid var(--bg__darkgreen);
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.idDelete__form .bottom a:hover {
+    color: #fff;
+    background-color: var(--bg__darkgreen);
+}
+.idDelete__form .bottom a {
+    font-size: 16px;
+    color: var(--color__white);
+    background-color: var(--bg__green);
+    padding: 12px 115px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.idDelete__form .top a:hover {
+    color: #fff;
+    background-color: var(--bg__darkgreen);
+}
+
+.idDelete__form .top button {
+    font-size: 16px;
+    color: var(--bg__darkgreen);
+    background-color: var(--color__white);
+    padding: 9px 100px;
+    border: 1px solid var(--bg__darkgreen);
+    border-radius: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.idDelete__form .top button:hover {
+    color: var(--color__white);
+    background-color: var(--bg__darkgreen);
+}
+#idDeletePass {
+    padding: 10px 15px;
+    border: 1px solid var(--bg__darkgreen);
+}
+#idDeleteCancel {
+    padding: 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: all 0.3s;
+}
+#idDeleteCancel:hover {
+    background-color: var(--bg__green);
+    color: var(--color__white);
+}
+#idDeleteButton {
+    padding: 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#idDeleteButton:hover {
+    background-color: var(--bg__green);
+    color: var(--color__white);
+}

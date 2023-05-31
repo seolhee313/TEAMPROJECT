@@ -1,0 +1,349 @@
+.view__head {
+    padding: 3em 5em 1.5em 2em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+.view__head img {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+.view__head h2 {
+    padding: 0 1em;
+    font-size: 25px;
+}
+.view__head h2 span {
+    color: #FF8585;
+}
+.view__head em {
+    font-size: 25px;
+}
+.board__head.list {
+    padding: 0em 5em 1.5em 0;
+    display: flex;
+    align-items: center;
+}
+.board__head {
+    padding: 3em 5em 1.5em 0;
+    display: flex;
+    align-items: center;
+}
+.board__head img {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+.board__head h2 {
+    padding: 0 1em;
+    font-size: 25px;
+}
+.board__head h2 span {
+    color: #FF8585;
+}
+.board__head em {
+    font-size: 25px;
+}
+.view__body {}
+.boardView__info {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boardView__left {
+    display: flex;
+    font-size: 20px;
+}
+.boardView__left > div {
+    padding: 0 2em 0 0.1em;
+}
+.boardView__right {
+    display: flex;
+    align-items: center;
+}
+.boardView__count {
+    position: relative;
+    margin-right: 10px;
+}
+.boardView__count::before {
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/eye.png);
+    background-repeat: no-repeat;
+}
+.boardView__right > div {
+    padding: 0 0.1em 0 1em;
+}
+.boardView__writer{
+    margin-left: 10px;
+}
+.boardView__writer .name {
+    font-size: 18px;
+    font-weight: 700;
+}
+.boardView__writer .regtime {
+    color: #777;
+}
+.boardView__main {
+    padding: 3em 5em;
+    font-size: 18px;
+    border-bottom: 1px solid var(--color__black);
+}
+.boardView__main > div{
+    width: 100%;
+    text-align: center;
+}
+.boardView__like {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.boardView__btn {
+    text-align: center;
+    margin: 0 0 10em 0;
+}
+.boardView__img > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.comment__write p {
+    color: #ccc;
+    font-size: 14px;
+}
+.comment__box {
+    display: flex;
+    justify-content: space-between;
+}
+.comment__write textarea {
+    width: 83%;
+    height: 120px;
+    padding: 1.5em 2em;
+    resize: none;
+}
+.comment__write button {
+    width: 15%;
+    height: 120px;
+    background-color: var(--bg__green);
+    color: var(--color__white);
+    font-size: 20px;
+    cursor: pointer;
+}
+.comment__view {
+    padding-bottom: 20em;
+}
+.comment__view > div {
+    padding: 1.5em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+.comment__writer {
+    width: 83%;
+}
+.comment__writer .name {
+    font-size: 18px;
+    font-weight: 700;
+}
+.comment__writer .contents {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.comment__delete {
+    padding: 5px 20px;
+    border: 1px solid #000;
+}
+.comment__img {
+    width: 50px;
+    height: 50px;
+}
+.boardView__info {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boardView__left {
+    display: flex;
+    font-size: 20px;
+}
+.boardView__left > div {
+    padding: 0 2em 0 0.1em;
+}
+.boardView__right {
+    display: flex;
+    align-items: center;
+}
+.boardView__count {
+    position: relative;
+    margin-right: 10px;
+}
+.boardView__count::before {
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/eye.png);
+    background-repeat: no-repeat;
+}
+.boardView__right > div {
+    padding: 0 0.1em 0 1em;
+}
+.boardView__writer{
+    margin-left: 10px;
+}
+.boardView__writer .name {
+    font-size: 18px;
+    font-weight: 700;
+}
+.boardView__writer .regtime {
+    color: #777;
+}
+.boardView__main {
+    padding: 3em 5em;
+    font-size: 18px;
+    border-bottom: 1px solid var(--color__black);
+}
+.boardView__like {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.boardView__btn {
+    text-align: center;
+    margin: 0 0 10em 0;
+}
+.comment__write p {
+    color: #ccc;
+    font-size: 14px;
+}
+.comment__box {
+    display: flex;
+    justify-content: space-between;
+}
+.comment__write textarea {
+    width: 83%;
+    height: 120px;
+    padding: 1.5em 2em;
+    resize: none;
+}
+.comment__write button {
+    width: 15%;
+    height: 120px;
+    background-color: var(--bg__green);
+    color: var(--color__white);
+    font-size: 20px;
+    cursor: pointer;
+}
+.comment__view {
+    padding-bottom: 20em;
+}
+.comment__view > div {
+    padding: 1.5em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+.comment__writer {
+    width: 83%;
+}
+.comment__writer .name {
+    font-size: 18px;
+    font-weight: 700;
+}
+.comment__writer .contents {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.comment__delete {
+    padding: 5px 20px;
+    border: 1px solid #000;
+}
+.comment__img {
+    width: 50px;
+    height: 50px;
+}
+.comment__img > img {
+    border-radius: 10px;
+}
+
+
+/* modal */
+.modal {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.modal__inner h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.modal__inner p {
+    color: #666666;
+}
+.modal .modal__inner {
+    width: 450px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: relative;
+    border-radius: 30px;
+    border: 8px solid #AEDBD6;
+}
+.modal .modal__inner .modal__close {
+    position: absolute;
+    bottom: 90px;
+    right: 150px;
+    width: 50px; height: 21px;
+}
+.modal__wrap {
+    padding: 50px;
+    left: 50%; top: 100px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    padding: 50px;
+}
+.modal__text {
+    width: 100%;
+    height: 100%;
+}
+.modalBtn {
+    display: block;
+    background-color: var(--bg__green);
+    color: var(--color__white);
+    padding: 0.1em 0.7em;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 90px;right: 80px;
+}
+.modal-btn {
+    cursor: pointer;
+}

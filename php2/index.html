@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 하루 한 지문 - 인덱스 </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../php2/html/assets/css/style.css">
+
+    <style>
+        @import url('https://webfontworld.github.io/score/SCoreDream.css');
+        @import url('https://webfontworld.github.io/NanumSquare/NanumSquare.css'); 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0 auto; 
+            font-family: 'NanumSquare';
+            font-weight: 700;
+            font-size: 40px;
+            background-color: #E9F5F5; 
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase; 
+            color: #000;
+        }
+        ul,li {
+            list-style: none;
+        }
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .html, .php, .figma {
+            width: 33.333%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'SCoreDream';
+            font-weight: bold;
+            color: #568682;
+            position: relative;
+            /* padding: 40px; */
+        }
+        .hover {
+            color: #000;
+            margin-bottom: 40px;
+            font-size: 22px;
+        }
+        .hover:hover {
+            color: #6FACA7;
+        }
+        /* 전체 */
+        .AllTopDown{
+            padding: 60px 0;
+        }
+        .wrap div:nth-child(3) .F_cont ul{
+            border-right:none;
+        }
+        /* 피그마 : 로그인 */
+        .F_cont ul{
+            border-right:0.5px solid #EDEDED;
+            padding: 0 25px;
+        }
+        .F_cont h2 {
+            font-size: 22px;
+            font-family: 'SCoreDream';
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: left;
+            padding: 0 25px;
+            border-left: 2px solid #568682;
+        }
+        .F_cont ul {
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+        .F_cont ul:last-child {
+            margin-bottom: 0px;
+        }
+        .F_cont ul li {
+            /* border-bottom: Dashed 1px #EDEDED; */
+            padding: 15px 0;
+        }
+        .F_cont ul li a {
+            font-weight: normal;
+            font-size: 16px;
+        }
+        .F_cont ul li:hover {
+            background: #D0E5E4;
+            border-radius: 50px;
+            padding: 15px 0px 15px 51px;
+            transition: 0.25s;
+            backdrop-filter: blur(8px);
+        }
+        .F_cont ul li:hover a{
+            color: #568682;
+        }
+        .F_cont ul li:not(:hover){
+            transition: 0.25s;
+        }
+    </style>
+</head>
+<body class="AllTopDown">
+    <h2 style="text-align: center; font-size:50px; font-family: 'SCoreDream'; margin-bottom: 70px; color: #4B7673;">3조 하루 한 지문</h2>
+    <div class="wrap">
+        <div class="figma">
+            <a href="#" target="_blank"><h2 class="hover">Figma</h2></a>
+            <div class="F_cont">
+                <h2>로그인•회원가입</h2>
+                <ul class="F_login">
+                    <!-- <li><a href="Figma/Figma_login/F_login.html">01. 로그인 팝업창</a></li>
+                    <li><a href="Figma/Figma_login/F_ID.html">02. 아이디 찾기</a></li>
+                    <li><a href="Figma/Figma_login/F_password.html">03. 비밀번호 찾기</a></li>
+                    <li><a href="Figma/Figma_login/F_ID_clear.html">04. 아이디 찾기 완료</a></li>
+                    <li><a href="Figma/Figma_login/F_password_clear.html">05. 비밀번호 찾기 완료</a></li>
+                    <li><a href="Figma/Figma_login/F_OK.html">06. 이용약관 동의</a></li>
+                    <li><a href="Figma/Figma_login/F_ing.html">07. 회원가입 정보 입력</a></li>
+                    <li><a href="Figma/Figma_login/F_clear.html">08. 회원가입 완료</a></li>
+                    <li><a href="Figma/Figma_login/F_bye.html">09. 회원 탈퇴 확인</a></li>
+                    <li><a href="Figma/Figma_login/F_byebye.html">10. 회원 탈퇴 완료</a></li> -->
+                </ul>
+                <h2>게시판</h2>
+                <ul class="F_board">
+                    <!-- <li><a href="Figma/Figma_notion/F_notion.html">01. 공지사항 메인</a></li>
+                    <li><a href="Figma/Figma_notion/F_notionOK.html">02. 공지사항 보기</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardWhite.html">03. 공지사항 글쓰기</a></li>
+                    <li><a href="Figma/Figma_notion/F_notionNOT.html">04. 공지사항 수정</a></li>
+                    <li><a href="Figma/Figma_notion/F_notionNOTbye.html">05. 공지사항 수정 완료</a></li>
+                    <li><a href="Figma/Figma_notion/F_board.html">06. 게시판 메인</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardOK.html">07.게시판 보기</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardWhite.html">08. 게시판 글쓰기</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardNOT.html">09. 게시판 수정</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardNOTbye.html">10. 게시판 수정 완료</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardSearch.html">11. 게시판 검색</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardDt.html">12. 게시판 삭제</a></li>
+                    <li><a href="Figma/Figma_notion/F_FQA.html">13. FQA 보기</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="html">
+            <a href="board/board.html" target="_blank"><h2 class="hover">html</h2></a>
+            <div class="F_cont">
+                <h2>로그인•회원가입</h2>
+                <ul class="H_login">
+                    <li><a href="html/login.html">01. 로그인</a></li>
+                    <li><a href="html/idFind.html">02. 아이디 찾기</a></li>
+                    <li><a href="html/passFind.html">03. 비밀번호 찾기</a></li>
+                    <li><a href="html/idFindOk.html">04. 아이디 찾기 완료</a></li>
+                    <li><a href="html/passFindOk.html">05. 비밀번호 찾기 완료</a></li>
+                    <li><a href="html/join.html">06. 회원가입</a></li>
+                    <li><a href="html/joinEnd.html">07. 회원가입 완료</a></li>
+                    <li><a href="html/idDelete.html">08. 회원 탈퇴 확인</a></li>
+                    <li><a href="html/idDeleteOk.html">09. 회원 탈퇴 완료</a></li>
+                    <br>
+                    <li><a href="html/main.html">10. 메인</a></li>
+                </ul>
+                <h2>문제</h2>
+                <ul class="H_board">
+                    <li><a href="html/question.html">01. 문제</a></li>
+                    <li><a href="html/questionView.html">02. 문제 보기</a></li>
+                    <li><a href="html/questionView2.html">03. 문제 보기2</a></li>
+                </ul>
+                <h2>게시판</h2>
+                <ul class="H_board">
+                    <li><a href="html/notice.html">01. 공지사항 메인</a></li>
+                    <li><a href="html/noticeView.html">02. 공지사항 보기</a></li>
+                    <li><a href="html/noticeWrite.html">03. 공지사항 글쓰기</a></li>
+                    <li><a href="html/noticeModify.html">04. 공지사항 수정</a></li>
+                    <br>
+                    <li><a href="html/event.html">05. 이벤트 메인</a></li>
+                    <li><a href="html/eventView.html">06. 이벤트 보기</a></li>
+                    <li><a href="html/eventWrite.html">06. 이벤트 쓰기</a></li>
+                    <li><a href="html/eventModify.html">06. 이벤트 수정</a></li>
+                    <br>
+                    <li><a href="html/board.html">07. 게시판 메인</a></li>
+                    <li><a href="html/boardView.html">08.게시판 글 보기</a></li>
+                    <li><a href="html/boardWrite.html">09. 게시판 글쓰기</a></li>
+                    <li><a href="html/boardModify.html">10. 게시판 수정하기</a></li><br>
+                    <li><a href="html/faq.html">11. FAQ</a></li>
+                    <!-- <li><a href="">11. 게시판 댓글 수정하기</a></li> -->
+                    <!-- <li><a href="html/boardSearch.html">12. 게시판 검색</a></li> -->
+                    <!-- <li><a href="">13. 게시판 삭제</a></li>
+                    <li><a href="">14. FQA 보기</a></li> -->
+                </ul>
+                <h2>마이페이지</h2>
+                <ul class="H_board">
+                    <li><a href="html/mypage.html">01. 마이페이지</a></li>
+                    <li><a href="html/reviewnote.html">02. 오답노트 모음</a></li>
+                </ul>
+                <h2>하루 한 지문 배경</h2>
+                <ul class="H_board">
+                    <li><a href="html/background.html">배경</a></li>
+                </ul>
+                <h2>게임</h2>
+                <ul class="H_board">
+                    <li><a href="html/hangeulTest.html">맞춤법 테스트 인트로</a></li>
+                    <li><a href="html/hangeulTestView.html">맞춤법 테스트 게임</a></li>
+                    <li><a href="html/hangeulTestResult.html">맞춤법 테스트 결과</a></li>
+                    <li><a href="html/mzTest.html">신조어 테스트</a></li>
+                    <li><a href="html/mzTestView.html">신조어 테스트 게임</a></li>
+                    <li><a href="html/mzTestResult.html">신조어 테스트 결과</a></li>
+                    <li><a href="html/keyboard.html">키보드 게임</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="php">
+            <a href="" target="_blank"><h2 class="hover">PHP</h2></a>
+            <div class="F_cont">
+                <h2>로그인•회원가입</h2>
+                <ul>
+                    <li><a href="main/main.php">메인</a></li>
+                    <br>
+                    <li><a href="join/join.php">회원가입</a></li>
+                    <li><a href="join/joinEnd.php">회원가입 완료</a></li>
+                    <li><a href="myPage/idDelete.php">회원탈퇴</a></li>
+                    <li><a href="myPage/idDeleteOk.php">회원탈퇴 완료</a></li>
+                    <li><a href="login/login.php">로그인</a></li>
+                    <li><a href="login/idFind.php">아이디 찾기</a></li>
+                    <li><a href="login/idFindOk.php">아이디 찾기 완료</a></li>
+                    <li><a href="login/passFind.php">비밀번호 찾기</a></li>
+                    <li><a href="login/passFindOk.php">비밀번호 찾기 완료</a></li>
+                </ul>
+                <h2>게시판</h2>
+                <ul>
+                    <li><a href="notice/notice.php">공지사항 메인</a></li>
+                    <li><a href="notice/noticeView.php">공지사항 보기</a></li>
+                    <li><a href="notice/noticeWrite.php">공지사항 글쓰기</a></li>
+                    <li><a href="notice/noticeModify.php">공지사항 수정</a></li>
+                    <br>
+                    <li><a href="event/event.php">이벤트 메인</a></li>
+                    <li><a href="event/eventWrite.php">이벤트 쓰기</a></li>
+                    <li><a href="event/eventView.php">이벤트 보기</a></li>
+                    <li><a href="event/eventModify.php">이벤트 수정</a></li>
+                    <br>
+                    <li><a href="board/board.php">게시판</a></li>
+                    <li><a href="board/boardWrite.php">게시판 쓰기</a></li>
+                    <li><a href="board/boardView.php">게시판 보기</a></li>
+                    <li><a href="board/boardModify.php">게시판 수정</a></li>
+                    <br>
+                    <li><a href="faq/faq.php">FAQ</a></li>
+
+                </ul>
+                <h2>마이페이지</h2>
+                <ul class="H_board">
+                    <li><a href="myPage/myPage.php">01. 마이페이지</a></li>
+                </ul>
+                <h2>하루 한 지문 배경</h2>
+                <ul class="H_board">
+                    <li><a href="main/background.php">배경</a></li>
+                </ul>
+                <h2>문제</h2>
+                <ul class="H_board">
+                    <li><a href="question/question.php">01. 문제</a></li>
+                    <li><a href="question/questionView.php">02. 문제 보기</a></li>
+                    <li><a href="question/questionViewMoonhak.php">03. 문제 보기2</a></li>
+                </ul>
+                <h2>게임</h2>
+                <ul class="H_board">
+                    <li><a href="game/">맞춤법 테스트 인트로</a></li>
+                    <li><a href="game/hangeulTestView.php">맞춤법 테스트 게임</a></li>
+                    <li><a href="game/hangeulTestResult.php">맞춤법 테스트 결과</a></li>
+                    <li><a href="game/mzTest.php">신조어 테스트</a></li>
+                    <li><a href="game/mzTestView.php">신조어 테스트 게임</a></li>
+                    <li><a href="game/mzTestResult.php">신조어 테스트 결과</a></li>
+                    <li><a href="game/keyboard.php">키보드 게임</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="floating bot">
+            <button class="top-btn" type="button" name="상단으로 바로가기">
+                <span class="icon-arrow_up"><img src="../php2/html/assets/img/mainArrow01.svg" alt="화살표"></span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const scrollToTopBtn = document.querySelector('.top-btn');
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

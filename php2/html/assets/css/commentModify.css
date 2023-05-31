@@ -1,0 +1,447 @@
+/* 댓글 수정하기 모달 */
+.modal {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.modal__inner h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.modal__inner p {
+    color: #666666;
+}
+.modal .modal__inner {
+    width: 450px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: relative;
+    border-radius: 30px;
+    border: 8px solid #AEDBD6;
+}
+.modal .modal__inner .modal__close {
+    position: absolute;
+    bottom: 90px;
+    right: 150px;
+    width: 50px; height: 21px;
+}
+.modal__wrap {
+    padding: 50px;
+    left: 50%; top: 100px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 100px;
+}
+.modal__text {
+    width: 100%;
+    height: 100%;
+}
+.modalBtn {
+    display: block;
+    background-color: var(--bg__green);
+    color: var(--color__white);
+    padding: 0.1em 0.7em;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 90px;right: 80px;
+}
+.modal-btn {
+    cursor: pointer;
+}
+/* questionExplain */
+.modal .questionModal__inner {
+    width: 900px;
+    height: 650px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border-radius: 30px;
+    border: 8px solid #AEDBD6;
+    padding: 80px 50px;
+}
+.modal .questionModal__wrap {
+    width: 100%;
+    height: 500px;
+    overflow:auto;
+}
+.questionModal__wrap h1 {
+    margin-top: 30px;
+    font-weight: bold;
+    padding: 5px;
+    display: inline;
+    background-color: #A8F3E1;
+    border-radius: 7px;
+}
+.questionModal__wrap p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.questionModal__close {
+    width: 50px;
+    height: 30px;
+    background-color: var(--bg__green);
+    color: var(--color__white);
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.questionModal__wrap::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+.questionModal__wrap::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #C0EBE8; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.questionModal__wrap::-webkit-scrollbar-track {
+    background: #EDFAF7;  /*스크롤바 뒷 배경 색상*/
+}
+/* 오답노트 모달창 */
+.reviewModal {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.reviewModal__inner {
+    width: 900px;
+    height: 650px;
+    background-color: #fff;
+    /* position: absolute; */
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border-radius: 30px;
+    border: 8px solid #AEDBD6;
+    padding: 50px;
+    text-align: center;
+}
+.reviewModal__inner h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+.reviewModal__wrap {
+    width: 100%;
+    height: 400px;
+}
+.reviewModal__wrap textarea {
+    resize: none;
+}
+.reviewModal__close {
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    background-color: #AEDBD6;
+    position: absolute;
+    top: 55px;right: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.review__save {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+}
+.questionReviewModify {
+    display: inline-block;
+    width: 100px;
+    font-size: 15px;
+    height: 30px;
+    color: #fff;
+    background-color: #AEDBD6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.questionReviewSave {
+    display: inline-block;
+    width: 100px;
+    font-size: 15px;
+    height: 30px;
+    color: #fff;
+    background-color: #AEDBD6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.questionYearNum {
+    text-align: left;
+}
+.inputStyle6 {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 1em 2em;
+    border: 1px solid #000000;
+    font-weight: 300;
+}
+/* 커스텀 스크롤바 스타일링 */
+.reviewModal_scroll::-webkit-scrollbar {
+    width: 10px;
+    background-color: #EDFAF7;
+    border-radius: 10px;
+    margin: 20px;
+}
+.reviewModal_scroll::-webkit-scrollbar-thumb {
+    background-color: #C0EBE8;
+}
+/* 닉네임 변경 모달 */
+.modalNick {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.inputStyle5 {
+    background-color: #FFFFFF;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid #666;
+    font-weight: 300;
+    padding: 15px;
+}
+.multiCheck {
+    display: block;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid #666;
+    font-weight: 300;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+.changeBtn {
+    color: var(--color__white);
+    font-weight: 700;
+    background-color: var(--bg__green);
+    border-radius: 10px;
+    padding: 1em 6.8em;
+    border: 0;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.commentMmodal__inner h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.commentMmodal__inner p {
+    color: #666666;
+}
+.modalNick .commentMmodal__inner {
+    width: 550px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: relative;
+    border-radius: 5em;
+    border: 0.3em solid #AEDBD6;
+}
+.modalNick .mypageMmodal__close {
+    background-image: url(../img/modalClose.svg);
+    background-size: cover;
+    position: absolute;
+    top: 1.8em;
+    right: 2.5em;
+    width: 30px; height: 30px;
+    cursor: pointer;
+}
+.commentMmodal__wrap {
+    padding: 50px;
+    left: 50%; top: 100px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 100px;
+}
+.commentMmodalBtn {
+    display: block;
+    background-color: var(--bg__green);
+    color: var(--color__white);
+    padding: 0.1em 0.7em;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 90px;right: 80px;
+}
+/* 비밀번호 변경 모달 */
+.modalPassC {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.changeBtn {
+    color: var(--color__white);
+    font-weight: 700;
+    background-color: var(--bg__green);
+    border-radius: 10px;
+    padding: 1em 6.8em;
+    border: 0;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.commentMmodal__inner h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.commentMmodal__inner p {
+    color: #666666;
+}
+.modalPassC .commentMmodal__inner {
+    width: 550px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: relative;
+    border-radius: 5em;
+    border: 0.3em solid #AEDBD6;
+}
+.modalPassC .mypageMmodal__close {
+    background-image: url(../img/modalClose.svg);
+    background-size: cover;
+    position: absolute;
+    top: 1.8em;
+    right: 2.5em;
+    width: 30px; height: 30px;
+    cursor: pointer;
+}
+.commentMmodal__wrap {
+    padding: 50px;
+    left: 50%; top: 100px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 100px;
+}
+.commentMmodalBtn {
+    display: block;
+    background-color: var(--bg__green);
+    color: var(--color__white);
+    padding: 0.1em 0.7em;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 90px;right: 80px;
+}
+/* 프로필 사진 변경 */
+.modalProP {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.changeBtn {
+    color: var(--color__white);
+    font-weight: 700;
+    background-color: var(--bg__green);
+    border-radius: 10px;
+    padding: 1em 6.8em;
+    border: 0;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.commentMmodal__inner h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.commentMmodal__inner p {
+    color: #666666;
+}
+.modalProP .commentMmodal__inner {
+    width: 550px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: relative;
+    border-radius: 5em;
+    border: 0.3em solid #AEDBD6;
+}
+.commentMmodal__inner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.modalProP .mypageMmodal__close {
+    background-image: url(../img/modalClose.svg);
+    background-size: cover;
+    position: absolute;
+    top: 1.8em;
+    right: 2.5em;
+    width: 30px; height: 30px;
+    cursor: pointer;
+}
+.commentMmodal__wrap {
+    padding: 50px;
+    left: 50%; top: 100px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 100px;
+}
+.commentMmodalBtn {
+    display: block;
+    background-color: var(--bg__green);
+    color: var(--color__white);
+    padding: 0.1em 0.7em;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 90px;right: 80px;
+}

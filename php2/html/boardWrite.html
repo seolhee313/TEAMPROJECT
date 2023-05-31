@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성하기</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header" class="">
+        <div class="header__inner container">
+            <div class="left">
+                <h1><a href="/php2/index.html"><img src="../html/assets/img/logo.png" alt="로고"></a></h1>
+            </div>
+            <nav class="nav__inner">
+                <ul>
+                    <li><a href="background.html">하루 한 지문</a></li>
+                    <li><a href="question.html">문제</a></li>
+                    <li><a href="mzTest.html">게임</a></li>
+                    <li><a href="board.html">커뮤니티</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <div class="tab__menu">
+        <div class="tab__inner">
+            <h1>게시글 작성하기</h1>
+            <p>하루 한 지문에서 자유롭게 소통해주세요!<br>
+                비방, 모욕, 욕설 등의 게시글은 무단 삭제될 수 있습니다.</p>
+        </div>
+    </div>
+    <!-- tab -->
+    
+    <main id="main" class="container">
+        <div class="intro__inner center bmStyle"></div>
+        <!-- //intro__inner-->
+        <div class="board__inner">
+            <div class="board__write">
+                <form action="#" name="#" method="post">
+                    <fieldset>
+                        <legend class="blind">게시글 작성하기</legend>
+                        <div class="board__title">
+                            <select name="tipSection" id="searchOptions">
+                                <option value="freetalk">자유게시판</option>
+                                <option value="explain">나만의 해설</option>
+                                <option value="tip">일상 꿀팁</option>
+                                <option value="study">인강/문제집</option>
+                            </select>
+                            <input type="text" id="boardTitle" name="boardTitle" class="inputStyle4" placeholder="제목을 입력해주세요!" required>
+                        </div>
+                        <div>
+                            <form id="form">
+                                <input type="file" id="file-input" class="inputStyle4" />
+                                <!-- <button type="button" onclick="uploadImage()">Upload</button> -->
+                            </form>
+                            <div id="image-preview"></div>
+                        </div>
+                        <div>
+                            <textarea name="boardContents" id="boardContents" rows="20" class="inputStyle4" placeholder="내용을 입력해주세요!" required></textarea>
+                        </div>
+                        <div class="boardWrite__btn">
+                            <a href="board.html" class="btnStyle6">취소하기</a>
+                            <button type="submit" class="btnStyle6">저장하기</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+    
+    <footer id="footer" class="darkgreen">
+        <div class="footer__inner container">
+            <div class="ul__inner">
+                <div class="left">
+                    <ul>
+                        <li><a href="#c">개인정보처리방침</a></li>
+                        <li><a href="#c">이용약관</a></li>
+                        <li><a href="#c">이메일무단수집거부</a></li>
+                    </ul>
+                    <h1 class="mt100"><img src="../html/assets/img/logo.png" alt="로고"></h1>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="main.html">홈 바로가기</a></li>
+                        <li><a href="background.html">하루 한 지문 소개</a></li>
+                        <li><a href="question.html">문제 풀기</a></li>
+                        <li><a href="mzTest.html">게임</a></li>
+                        <li><a href="board.html">커뮤니티</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                    </ul>
+                    <address class="mt40 mb70">경기도 안산시 단원구 중앙동 코스모프라자 6층 | Tel(010-4355-7340)</address>
+                    <a href="faq.html">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    
+    <script>
+        function uploadImage() {
+            const fileInput = document.getElementById("file-input");
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function () {
+                const imagePreview = document.getElementById("image-preview");
+                const img = document.createElement("img");
+                img.src = reader.result;
+                imagePreview.appendChild(img);
+            };
+        }
+    </script>
+</body>
+</html>

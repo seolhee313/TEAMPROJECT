@@ -1,0 +1,71 @@
+/* idfindok__inner */
+.idfindok__inner {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15em 0em 10em;
+    text-align: center;
+}
+
+/* idfindok__box */
+.idfindok__box {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 60px 100px;
+}
+.idfindok__box .top h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+.idfindok__box .top p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.idfindok__box .nav {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.idfindok__box .nav h3 {
+    width: 150px;
+}
+.idfindok__box .nav span {
+    font-size: 16px;
+    font-weight: bold;
+}
+.idfindok__box .bottom em {
+    font-style: normal;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* idfindok__form */
+.idfindok__form .top a {
+    font-size: 16px;
+    color: var(--color__white);
+    background-color: var(--bg__green);
+    padding: 12px 65px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.idfindok__form .top a:hover {
+    background-color: var(--bg__darkgreen);
+}
+.idfindok__form .bottom a {
+    font-size: 16px;
+    color: var(--bg__darkgreen);
+    background-color: var(--color__white);
+    padding: 10px 90px;
+    border-radius: 30px;
+    border: 1px solid #339A8E;
+    transition: all 0.3s;
+}
+.idfindok__form .bottom a:hover {
+    color: var(--color__white);
+    background-color: var(--bg__darkgreen);
+}

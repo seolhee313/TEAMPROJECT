@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "OKChan";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.eot");
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.woff")
+            format("woff"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/ok/OKChan.ttf")
+            format("truetype");
+    font-display: swap;
+}
+.hangeultest__inner {
+    padding: 5em 10em;
+    text-align: center;
+}
+.hangeultest__inner img {
+    width: 350px;
+}
+.hangeultest__inner p {
+    font-size: 20px;
+}
+.hangeultest__inner a {
+    font-family: "OKChan";
+}
+.hangeultest__inner button {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+/* hangeulTestView__inner */
+.hangeulTestView__inner {
+    padding: 5em 10em;
+    text-align: center;
+}
+.htest__header .htest__number {
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #000;
+    font-size: 20px;
+    padding: 0.5em 2em 0.4em;
+    line-height: 1.5;
+}
+.htest__header h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.htest__choice {
+}
+.htest__main .htest__desc {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.htest__choice label {
+    padding: 1.5em 0;
+}
+.htest__choice label span {
+    padding: 1em 5em;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: var(--bg__green);
+    font-weight: bold;
+    cursor: pointer;
+}
+.htest__choice label span:hover {
+    box-shadow: 0px 50px 30px -35px #1a4a3258;
+    background-color: var(--bg__darkgreen);
+    transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.htest__count em {
+    color: #ff3e3e;
+}
+/* hangeulTestResult */
+.hangeulTestResult {
+    padding: 5em 10em;
+    text-align: center;
+}
+.hangeulTestResult p {
+    font-size: 20px;
+}
+.hangeulTestResult__score {
+    font-size: 28px;
+}
+.hangeulTestResult__score em {
+    font-size: 50px;
+    color: red;
+}
+.hangeulTestResult h1 {
+    font-size: 28px;
+}
+.hangeulTestResult h2 {
+    color: #777777;
+    font-size: 23px;
+}
+.hangeulTestResult__boxTop {
+    font-size: 22px;
+    width: 80%;
+    padding: 0.6em;
+    margin: 0 auto;
+    border: 3px solid #c0ebe8;
+    border-bottom: 0;
+    border-radius: 2em 2em 0 0;
+}
+.hangeulTestResult__box__wrap {
+    margin: 0 auto;
+    width: 80%;
+    padding: 3em 2em 3em 3em;
+    border: 3px solid #c0ebe8;
+    border-radius: 0 0 2em 2em;
+}
+.hangeulTestResult__box__inner {
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: left;
+    height: 400px;
+    overflow: auto;
+}
+.hangeulTestResult__box__inner > span {
+    color: #008042;
+    padding: 0 8px;
+}
+.hangeulTestResult__box__inner > em {
+    text-decoration: line-through;
+    color: #ff4530a7;
+    padding: 0 8px;
+}
+.hangeulTestResult__box__inner > em::after {
+    text-decoration: line-through;
+}
+.hangeulTestResult__box__inner::-webkit-scrollbar {
+    width: 10px; /* 스크롤바의 너비 */
+}
+.hangeulTestResult__box__inner::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #c0ebe8; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.hangeulTestResult__box__inner::-webkit-scrollbar-track {
+    background: #edfaf7; /*스크롤바 뒷 배경 색상*/
+}
+.retry__button a {
+    line-height: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #94bab8;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 17em;
+    right: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+}
+.main__button a {
+    line-height: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #94bab8;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10em;
+    right: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+}
+.correct__button {
+    line-height: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #94bab8;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 24em;
+    right: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.correct__button a {
+    color: #000;
+    z-index: 999;
+}
+/* btn */
+.button {
+    font-family: "OKChan";
+    line-height: 1.5;
+    font-size: 30px;
+    display: block;
+    --offset: 7px;
+    --border-size: 3px;
+    display: block;
+    position: relative;
+    padding: 1em 2em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--bg__green);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    transition: background 0.8s ease;
+    transition: all 0.5s;
+}
+.button:hover {
+    background: rgba(197, 255, 241, 0.03);
+    color: var(--bg__darkgreen);
+    transition: all 0.5s;
+}
+.button__horizontal,
+.button__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform 0.8s ease;
+    will-change: transform;
+}
+.button__horizontal::before,
+.button__vertical::before {
+    content: "";
+    position: absolute;
+    border: inherit;
+}
+.button__horizontal {
+    color: var(--bg__mint);
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+}
+.button:hover .button__horizontal {
+    transform: scaleX(0);
+}
+.button__vertical {
+    color: var(--bg__mint);
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+}
+.button__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.button:hover .button__vertical {
+    transform: scaleY(0);
+}

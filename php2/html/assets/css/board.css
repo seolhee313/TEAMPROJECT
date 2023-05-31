@@ -1,0 +1,226 @@
+/* board__inner
+    +tab-menu
+    +board__table
+    +board__pages
+    +board__search
+*/
+.tab-menu {
+    padding: 15em 0 0;
+    background-color: #C0EBE8;
+}
+.tab-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+.tab-menu ul li {
+  padding: 2em 7.28em;
+  background-color: #96C3BE;
+  color: var(--color__white);
+  border-radius: 15px 15px 0 0;
+}
+.tab-menu ul li.active,
+.tab-menu ul li.active a {
+  background-color: var(--color__white);
+  color: #000;
+}
+.tab-menu ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color__white);
+  display: block;
+  transition: background-color 0.3s, color 0.3s; /* 애니메이션 효과를 위한 transition 추가 */
+}
+.tab-menu ul li a.active {
+  color: #000;
+  background-color: var(--color__white); /* a.active일 때 배경색을 하얀색으로 설정 */
+}
+.board__table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-top: 2px solid var(--color__black);
+    text-align: center;
+}
+.board__table table th {
+    background-color: #C0EBE8;
+    border-bottom: 1px solid var(--color__black);
+    padding: 10px 30px;
+    font-weight: 500;
+}
+.board__table table td {
+    padding: 15px 5px;
+    border-bottom: 1px solid var(--color__black);
+}
+.board__table table td a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+/* boardList_color */
+/* 비문학 */
+.board__table table td span.인문{
+    background-color: #ff99c9d2;
+    color: #7A1E49;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+.board__table table td span.과학{
+    background-color: #fcf6bda4;
+    color: #544D12;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+.board__table table td span.사회{
+    background-color: hsla(41, 100%, 75%, 0.879);
+    color: #D48B15;
+    padding: 6px 14px;
+    border-radius: 5px;
+}.board__table table td span.기술{
+    background-color: #c1ffb8e0;
+    color: #8F33A1;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+.board__table table td span.예술{
+    background-color: #FFA498;
+    color: #983326;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+/* 문학 */
+.board__table table td span.시{
+    background-color: hsla(41, 100%, 75%, 0.879);
+    color: #D48B15;
+    padding: 6px 14px;
+    border-radius: 5px;
+}.board__table table td span.소설{
+    background-color: #c1ffb8e0;
+    color: #8F33A1;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+.board__table table td span.고전{
+    background-color: #FFA498;
+    color: #983326;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+.board__table table td span.상 {
+    background-color: #FFC3C3;
+    color: #FF6363;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #FF7676;
+}
+.board__table table td span.중 {
+    background-color: #FFF2C3;
+    color: #FF9F92;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #FFBC6E;
+}
+.board__table table td span.하 {
+    background-color: #a0ff9e91;
+    color: #1BA452;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #11D400;
+}
+.board__table table tr {
+    transition: all 0.4s;
+}
+.board__table table tr:hover {
+    background-color: var(--bg__mint)
+}
+.board__table .btn {
+    display: flex;
+    justify-content: end;
+}
+.board__pages {
+    margin-bottom: 50px;
+}
+.board__pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board__pages li {
+    padding: 5px;
+}
+.board__pages li a {
+    padding: 8px;
+    margin-left: -1px;
+}
+.board__pages li:hover a {
+  background-color: var(--bg__mint)
+}
+.board__pages li.active a {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.board__pages > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 7px;
+}
+/* .board__pages > ul > li:nth-child(1) {
+    margin: 0 22px 0 0;
+}
+.board__pages > ul > li:nth-child(2) {
+    margin: 0 25px 0 0;
+}
+.board__pages > ul > li:nth-last-child(1) {
+    margin: 0 0 0 22px;
+}
+.board__pages > ul > li:nth-last-child(2) {
+    margin: 0 0 0 25px;
+} */
+.board__pages > ul > li.arrow a {
+    padding: 0;
+}
+.board__pages > ul > li > a img {
+    height: 17px;
+    margin-top: 3px;
+}
+.board__search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.board__search .right select {
+    border: 1px solid #777;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    color: #666;
+    margin-right: 3px;
+}
+.board__search .right input {
+    border: 1px solid #777;
+    background-color: var(--color__white);
+    padding: 5px 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    margin-right: 3px;
+}
+.board__pages > ul > li > a img {
+    width: 17px;
+    height: 17px;
+    margin-top: 3px;
+}
+.board__pages > ul > .prev > a img {
+    width: 15px;
+    height: 15px;
+}
+.board__pages > ul > .next > a img {
+    width: 15px;
+    height: 15px;
+}
+
+.board__pages > ul > .arrow:nth-child(2) > a img {
+    width: 15px;
+    height: 15px;
+}
+.board__pages > ul > .arrow:nth-child(3) > a img {
+    width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Light.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Light.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Light.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Light.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Light.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Regular.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Regular.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Bold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Bold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Bold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-Bold.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-ExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-ExtraBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-ExtraBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareRound/NanumSquareRound-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+} 

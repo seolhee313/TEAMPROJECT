@@ -1,0 +1,18 @@
+:root {
+    --main__font : "NanumSquareRound";
+
+    --font__size: "16px";
+
+    --color__black: #000;
+    --color__white: #fff;
+
+    --bg__mint : #E9F5F5;
+    --bg__green : #AEDBD6;
+    --bg__darkgreen : #729E9B;
+}
+
+@media (max-width: 800px){
+    :root {
+        --font__size : "14px";
+    }
+}
