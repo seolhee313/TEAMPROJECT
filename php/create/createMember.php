@@ -11,12 +11,11 @@
     $sql .= "PRIMARY KEY(memberID)";
     $sql .= ") charset=utf8;";
 
-
     $result = $connect -> query($sql);
 
     if($result){
         echo "create tables Complete";
     } else {
-        // echo "create tables false";
+        echo "create tables false";
     }
 ?>
